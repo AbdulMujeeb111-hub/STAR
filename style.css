@@ -1,0 +1,325 @@
+/* universal styles */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.momo-trust-display-regular {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goldman-regular {
+  font-family: "Goldman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goldman-bold {
+  font-family: "Goldman", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+
+/* header nav flex section */
+.Hflex{
+  font-family: "Goldman", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.Hflex a{
+  text-decoration: none;
+  color: black;
+  padding: 20px 10px;
+}
+
+.Hflex a:nth-child(5){
+  margin-left: auto;
+}
+
+.Hflex a:nth-child(6){
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.Hflex a:nth-child(6),
+.Hflex a:nth-child(7){
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.Hflex a:nth-child(7){
+  color: white;
+  background-color: black;
+}
+
+.Hflex a:nth-child(2):hover,
+.Hflex a:nth-child(3):hover,
+.Hflex a:nth-child(4):hover,
+.Hflex a:nth-child(5):hover{
+   color: green;
+}
+
+.Hflex a:nth-child(2):focus,
+.Hflex a:nth-child(3):focus,
+.Hflex a:nth-child(4):focus,
+.Hflex a:nth-child(5):focus{
+   color: green;
+}
+
+
+/* header section */
+header{
+  background-color:#003d00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 3em;
+}
+
+header h3{
+  margin-right: 30px;
+  color: white;
+}
+
+header a{
+  font-family: Tahoma, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+
+/* MAIN GRID SECTION */
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3em;
+}
+
+article{
+  width: 100%;
+}
+
+article img{
+  width: 100%;
+}
+
+.ok,
+.kk{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height:80% ;
+}
+
+
+
+ /* main grid item 1 */
+.SB1{
+ width: 100%;
+ display: grid;
+ background-color: rgb(92 64 51/95%);
+}
+
+.SB1 h3{
+  text-align: center;
+  word-spacing: 10px;
+  font-size: 2.3rem;
+  color: white;
+  align-self: center;
+  margin-top: 50px;
+}
+
+ .SB1 p{
+  text-indent: 2em;
+  line-height: 1.5;
+  word-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.SB1 a{
+  text-decoration: none;
+  font-size: 30px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 25px;
+  font-style: bold;
+  color:black;
+  padding: 15px;
+  justify-self: center;
+  width: max-content;
+  height: max-content;
+  word-spacing: 1px;
+  }
+  
+/* main grid item 2 */
+.SB2{
+  display: grid;
+  width: 100%;
+  background-color: rgb(0 63 0/90%);
+   font-family: "Momo Trust Display", sans-serif;
+}
+
+.SB2 h3{
+  text-align: center;
+  word-spacing: 10px;
+  font-size: 2.3rem;
+  color: white;
+  align-self: center;
+  margin-top: 70px;
+}
+
+ .SB2 p{
+  text-indent: 2em;
+  line-height: 2;
+  word-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+
+.SB2 a{
+  text-decoration: none;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-style: bold;
+  color:white;
+  padding: 15px;
+  justify-self: center;
+  width: max-content;
+  height: max-content;
+  word-spacing: 1px;
+  }
+  
+  /* maim grid item 3 */
+  
+  article > div{
+    background-color: #0F5F4C;
+  }
+  .SB3{
+    display: grid;
+    width: 100%;
+    background-color: #0F5F4C;
+    font-family: "Momo Trust Display", sans-serif;
+  }
+  
+  .SB3 h3{
+  text-align: center;
+  word-spacing: 10px;
+  font-size: 2.3rem;
+  color: white;
+  align-self: center;
+  margin-top: 70px;
+}
+
+ .SB3 p{
+  text-indent: 2em;
+  line-height: 1.5;
+  word-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+
+.SB3 a{
+  text-decoration: none;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 35px;
+  background-color: white;
+  font-style: bold;
+  color:green;
+  padding: 15px;
+  justify-self: center;
+  width: max-content;
+  height: max-content;
+  word-spacing: 1px;
+  }
+  
+  /* main grid 4 */
+  .kkk{
+    background-color: #D4C9A8;
+  }
+  
+  .SB4{
+    display: grid;
+    background-color: #D4C9A8;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    color: #003d00;
+  }
+  
+  .bold-this{
+    font-weight: bold; 
+  }
+  
+  .SB4 h3{
+  text-align: center;
+  word-spacing: 10px;
+  font-size: 2.3rem;
+  align-self: center;
+  margin-top: 50px;
+}
+
+ .SB4 p{
+  text-indent: 2em;
+  line-height: 1.5;
+  word-spacing: 2px;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+
+.SB4 a{
+  text-decoration: none;
+  color: #003d00;
+  font-size: 30px;
+  border: 2px solid #003d00;
+  border-radius: 35px;
+  font-style: bold;
+  padding: 15px;
+  justify-self: center;
+  width: max-content;
+  height: max-content;
+  word-spacing: 1px;
+  }
+  
+  /* END OF MAIN GRID */
+  
+  /* SECTION TO BE CENTERED */
+  
+
+
+
