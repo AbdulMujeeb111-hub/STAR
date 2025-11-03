@@ -121,9 +121,10 @@ main{
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 3em;
+  margin-bottom: 5em;
 }
 
-article{
+main article{
   width: 100%;
 }
 
@@ -143,6 +144,7 @@ article img{
  /* main grid item 1 */
 .SB1{
  width: 100%;
+ height: 100%;
  display: grid;
  background-color: rgb(92 64 51/95%);
 }
@@ -230,6 +232,7 @@ article img{
   .SB3{
     display: grid;
     width: 100%;
+    height: 100%;
     background-color: #0F5F4C;
     font-family: "Momo Trust Display", sans-serif;
   }
@@ -278,6 +281,7 @@ article img{
     background-color: #D4C9A8;
     font-family: Arial, sans-serif;
     width: 100%;
+    height: 100%;
     color: #003d00;
   }
   
@@ -320,6 +324,110 @@ article img{
   
   /* SECTION TO BE CENTERED */
   
+section{
+  display: grid;
+  font-size: 1.2em;
+  grid-template-columns: 1fr;
+  line-height: 1.5;
+  row-gap: 2.5em;
+}
+
+.S1,
+.S2,
+.S3 {
+  justify-self: center;
+}
+
+section .S2 a{
+  color:black;
+}
+
+/* ASIDE SECTION */
+
+aside{
+  box-shadow: 0 -5px 5px 0 rgb(0 0 0/20%);
+  margin-top: 2.9em;
+  padding: 2em 3em;
+  padding-bottom: 1em;
+  font-size: 1em;
+}
+
+aside div h4{
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+aside div ul{
+  list-style-type: none;
+  line-height: 2;
+  display: none;
+}
+
+aside div:hover ul{
+  display: block;
+}
+
+aside div ul li a{
+  text-decoration: none;
+  color: rgb(0 0 0/ 60%);
+}
+
+aside div ul li a:hover,
+aside div ul li a:focus{
+  text-decoration: none;
+  color: rgb(0 0 0);
+}
 
 
+/* FOOTER SECTION */
+footer{
+  box-shadow: 0 -3px 3px 0 rgb(0 0 0/20%);
+  padding-left: 2em;
+  margin-top: 1.5em;
+  border-top: 1px solid rgb(0 0 0/20%);
+}
+
+footer nav{
+  display: flex;
+  width: 15%;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+footer nav a{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  background-clip: border-box;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+footer p a{
+  color: black;
+  text-decoration: none;
+  word-spacing: 3px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+footer p a:hover{
+  color: black;
+  text-decoration: revert;
+}
+
+footer p a:focus{
+  color: black;
+  text-decoration: revert;
+}
+
+.copy{
+  color: rgb(0 0 0/ 70%);
+  font-style: oblique;
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+}
 
