@@ -86,6 +86,10 @@
    color: green;
 }
 
+.Hflex .fa-bars {
+    display: none;
+  }
+
 
 /* header section */
 header{
@@ -93,12 +97,12 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: calc(10vh + 5px);
   margin-bottom: 3em;
 }
 
 header h3{
-  margin-right: 30px;
+  margin-right: calc(8vw + 10px);
   color: white;
 }
 
@@ -139,6 +143,97 @@ article img{
   height:80% ;
 }
 
+@media (max-width: 1280px)
+/* to address breakpoints seen when using desktop site on mobile */{
+  main{
+    display: flex;
+    flex-flow: column wrap;
+  }
+  main article{
+    height: fit-content;
+  }
+  
+  
+}
+
+@media (max-width: 992px) {
+    .Hflex a:not(:first-child):not(:last-child) {
+    display: none;
+}
+
+.Hflex .fa-bars {
+    display: inline;
+    margin-right: 1em;
+    font-size: 25px;
+    /* use JS to add interactivity to this so when U click this bar, ego bring the hidden links */
+  }
+  
+  
+  article img{
+  max-width: 100%;
+}
+
+
+}
+
+@media (max-width: 1280px) {
+  
+  header h3 {
+    font-size: 15px;
+  }
+  
+  header a{
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  letter-spacing: 0.2px;
+}
+  
+  
+  
+  main{
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  
+  /* rest of main grid section styles here */
+  
+  
+  
+  /* to apply styling on the fonts */
+  section{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0px 1.5em;
+    font-size: calc(3vw + 5px);
+  }
+  
+  /* aside section */
+  
+  aside div h4,
+  aside div ul {
+  font-size: 15px;
+}
+
+footer nav{
+  width: 20vw;
+}
+
+footer nav a {
+  padding: 2px;
+  margin-left: 5px;
+}
+  
+  footer p{
+    font-size: 10px;
+  }
+  
+}
+
 
 
  /* main grid item 1 */
@@ -152,36 +247,39 @@ article img{
 .SB1 h3{
   text-align: center;
   word-spacing: 10px;
-  font-size: 2.3rem;
+  font-size: calc(3vw + 1em);
   color: white;
   align-self: center;
   margin-top: 50px;
 }
 
  .SB1 p{
-  text-indent: 2em;
+  text-indent: calc(3vw + 10px);
   line-height: 1.5;
   word-spacing: 2px;
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: calc(1vw + 1em);
+  text-wrap: wrap;
+  padding: 10px;
   margin-top: 2em;
 }
 
 .SB1 a{
   text-decoration: none;
-  font-size: 30px;
+  font-size: calc(1vw + 5px);
   border: 2px solid white;
   background-color: white;
   border-radius: 25px;
   font-style: bold;
   color:black;
-  padding: 15px;
+  padding: calc(2vw + 1px);
   justify-self: center;
   width: max-content;
   height: max-content;
   word-spacing: 1px;
-  }
+  margin-bottom: calc(1vw + 1px);
+  } 
   
 /* main grid item 2 */
 .SB2{
@@ -194,7 +292,7 @@ article img{
 .SB2 h3{
   text-align: center;
   word-spacing: 10px;
-  font-size: 2.3rem;
+  font-size: calc(3vw + 1em);
   color: white;
   align-self: center;
   margin-top: 70px;
@@ -206,13 +304,15 @@ article img{
   word-spacing: 2px;
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: calc(1vw + 1em);
+  text-wrap: wrap;
+  padding: 10px;
   margin-top: 1.5em;
 }
 
 .SB2 a{
   text-decoration: none;
-  font-size: 30px;
+  font-size: calc(1vw + 5px);
   border: 2px solid white;
   border-radius: 25px;
   font-style: bold;
@@ -222,6 +322,7 @@ article img{
   width: max-content;
   height: max-content;
   word-spacing: 1px;
+  margin-bottom: calc(1vw + 1px);
   }
   
   /* maim grid item 3 */
@@ -240,7 +341,7 @@ article img{
   .SB3 h3{
   text-align: center;
   word-spacing: 10px;
-  font-size: 2.3rem;
+  font-size: calc(3vw + 1em);
   color: white;
   align-self: center;
   margin-top: 70px;
@@ -252,13 +353,14 @@ article img{
   word-spacing: 2px;
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: calc(1vw + 1em);
+  text-wrap: wrap;
   margin-top: 1.5em;
 }
 
 .SB3 a{
   text-decoration: none;
-  font-size: 30px;
+  font-size: calc(1vw + 5px);
   border: 2px solid white;
   border-radius: 35px;
   background-color: white;
@@ -269,6 +371,7 @@ article img{
   width: max-content;
   height: max-content;
   word-spacing: 1px;
+  margin-bottom: calc(1vw + 1px);
   }
   
   /* main grid 4 */
@@ -292,7 +395,7 @@ article img{
   .SB4 h3{
   text-align: center;
   word-spacing: 10px;
-  font-size: 2.3rem;
+  font-size: calc(3vw + 1em);
   align-self: center;
   margin-top: 50px;
 }
@@ -302,14 +405,15 @@ article img{
   line-height: 1.5;
   word-spacing: 2px;
   text-align: center;
-  font-size: 2em;
+  font-size: calc(1vw + 1em);
+  text-wrap: wrap;
   margin-top: 1.5em;
 }
 
 .SB4 a{
   text-decoration: none;
   color: #003d00;
-  font-size: 30px;
+  font-size: calc(1vw + 5px);
   border: 2px solid #003d00;
   border-radius: 35px;
   font-style: bold;
@@ -318,6 +422,7 @@ article img{
   width: max-content;
   height: max-content;
   word-spacing: 1px;
+  margin-bottom: calc(1vw + 1px);
   }
   
   /* END OF MAIN GRID */
@@ -326,7 +431,7 @@ article img{
   
 section{
   display: grid;
-  font-size: 1.2em;
+  font-size: calc(1vw + 10px);
   grid-template-columns: 1fr;
   line-height: 1.5;
   row-gap: 2.5em;
@@ -349,14 +454,14 @@ aside{
   margin-top: 2.9em;
   padding: 2em 3em;
   padding-bottom: 1em;
-  font-size: 1em;
+  font-size: calc(0.2vw + 1em);
 }
 
 aside div h4{
   font-weight: normal;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: calc(0.5vw + 1em);
 }
 
 aside div ul{
@@ -371,7 +476,7 @@ aside div:hover ul{
 
 aside div ul li a{
   text-decoration: none;
-  color: rgb(0 0 0/ 60%);
+  color: rgba(0,0,0,60%);
 }
 
 aside div ul li a:hover,
